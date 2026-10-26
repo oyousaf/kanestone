@@ -74,7 +74,7 @@ export default function Enquiry() {
       <div className="relative mx-auto grid max-w-7xl gap-16 lg:grid-cols-[1fr_1.1fr]">
         <div className="lg:sticky lg:top-32 lg:self-start">
           <p className="eyebrow mb-4 text-champagne">Enquiries</p>
-          <SplitReveal text="Every relationship begins with a conversation." className="font-display text-[clamp(2.75rem,6vw,5.5rem)] leading-[0.95]" />
+          <SplitReveal text="Every relationship begins with a conversation." className="font-display text-[clamp(2.25rem,4.8vw,4.5rem)] leading-[1]" />
           <p className="mt-8 max-w-md text-lg text-ivory/65">
             Whether you require a prestigious vehicle, a bespoke hire arrangement or a commercial supply partnership, we welcome the opportunity
             to discuss your requirements.
@@ -82,7 +82,7 @@ export default function Enquiry() {
           <p className="mt-4 max-w-md text-ivory/45">Every enquiry receives individual attention, professionalism and discretion.</p>
           <a
             href={`mailto:${contact.email}`}
-            className="group mt-10 inline-flex items-center gap-3 font-display text-3xl sm:text-4xl"
+            className="group mt-10 inline-flex items-center gap-3 font-display text-2xl sm:text-3xl"
           >
             <span className="bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-700 ease-lux group-hover:bg-[length:100%_1px]">
               {contact.email}

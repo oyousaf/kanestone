@@ -51,7 +51,7 @@ export default function Hero() {
             A new perspective on luxury automotive solutions
           </motion.p>
 
-          <h1 className="font-display text-[clamp(3.75rem,13.5vw,15rem)] leading-[0.86] tracking-[-0.02em]" aria-label="Bold. British. Bespoke.">
+          <h1 className="font-display text-[clamp(3.4rem,calc(9.5vw+1rem),11.5rem)] leading-[0.92] tracking-[-0.025em]" aria-label="Bold. British. Bespoke.">
             {words.map((w, i) => (
               <span key={w} aria-hidden className="block overflow-hidden">
                 <motion.span

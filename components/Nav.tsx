@@ -86,7 +86,7 @@ export default function Nav() {
                   <motion.a
                     href={item.href}
                     onClick={() => setOpen(false)}
-                    className="block font-display text-6xl"
+                    className="block font-display text-5xl"
                     initial={{ y: "100%" }}
                     animate={{ y: "0%" }}
                     transition={{ duration: 0.8, ease, delay: 0.25 + i * 0.07 }}

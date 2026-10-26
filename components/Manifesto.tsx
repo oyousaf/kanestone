@@ -26,7 +26,7 @@ export default function Manifesto() {
         <p className="eyebrow mb-10 flex items-center gap-4 text-champagne">
           <span className="h-px w-10 bg-champagne" /> The Founder
         </p>
-        <p ref={ref} className="font-display text-[clamp(2rem,4.6vw,4.25rem)] leading-[1.08] tracking-[-0.01em]">
+        <p ref={ref} className="font-display text-[clamp(1.75rem,3.8vw,3.5rem)] leading-[1.15] tracking-[-0.01em]">
           <span className="text-champagne">“</span>
           {words.map((w, i) => (
             <Word key={i} progress={scrollYProgress} range={[i / words.length, (i + 1) / words.length]}>

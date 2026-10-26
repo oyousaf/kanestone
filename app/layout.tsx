@@ -1,13 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
+import { Bodoni_Moda, Geist, Geist_Mono } from "next/font/google";
 import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
-const instrument = Instrument_Serif({
+const bodoni = Bodoni_Moda({
   subsets: ["latin"],
-  weight: "400",
   style: ["normal", "italic"],
-  variable: "--font-instrument",
+  axes: ["opsz"],
+  variable: "--font-bodoni",
 });
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
@@ -33,7 +33,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en-GB" className={`${instrument.variable} ${geist.variable} ${geistMono.variable}`}>
+    <html lang="en-GB" className={`${bodoni.variable} ${geist.variable} ${geistMono.variable}`}>
       <body className="bg-ink font-sans text-ivory">
         <SmoothScroll />
         {children}

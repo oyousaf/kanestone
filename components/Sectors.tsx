@@ -48,7 +48,7 @@ export default function Sectors() {
                   <Image src={s.image} alt="" fill sizes="64px" className="object-cover grayscale" />
                 </div>
                 <div className="flex flex-1 flex-col gap-1 md:flex-row md:items-baseline md:justify-between">
-                  <h3 className="font-display text-3xl transition-all duration-700 ease-lux group-hover:translate-x-3 group-hover:italic sm:text-5xl lg:text-6xl">
+                  <h3 className="font-display text-2xl transition-all duration-700 ease-lux group-hover:translate-x-3 group-hover:italic sm:text-4xl lg:text-5xl">
                     {s.title}
                   </h3>
                   <p className="text-sm text-ivory/50 transition-colors group-hover:text-ivory/80">{s.line}</p>
