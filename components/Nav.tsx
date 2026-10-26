@@ -3,6 +3,7 @@
 import { AnimatePresence, motion, useMotionValueEvent, useScroll } from "motion/react";
 import { useState } from "react";
 import { nav } from "@/lib/content";
+import Logo from "./Logo";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -32,9 +33,8 @@ export default function Nav() {
               : "border-transparent bg-transparent"
           }`}
         >
-          <a href="#top" className="flex items-baseline gap-2" aria-label="Kanestone home">
-            <span className="font-display text-2xl leading-none">K</span>
-            <span className="eyebrow hidden text-ivory/80 sm:inline">Kanestone</span>
+          <a href="#top" aria-label="Kanestone home">
+            <Logo className="text-base" />
           </a>
 
           <ul className="hidden items-center gap-8 md:flex">
@@ -86,7 +86,7 @@ export default function Nav() {
                   <motion.a
                     href={item.href}
                     onClick={() => setOpen(false)}
-                    className="block font-display text-5xl"
+                    className="block font-display text-6xl"
                     initial={{ y: "100%" }}
                     animate={{ y: "0%" }}
                     transition={{ duration: 0.8, ease, delay: 0.25 + i * 0.07 }}

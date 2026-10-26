@@ -33,7 +33,7 @@ function Card({
             <span className="text-champagne">0{index + 1}</span> / 0{total}
           </p>
           <div>
-            <h3 className="font-display text-[clamp(3.25rem,8.5vw,8rem)] leading-[0.9] capitalize italic">{pillar.word}</h3>
+            <h3 className="font-display text-[clamp(4rem,11vw,10rem)] leading-[0.85] capitalize italic">{pillar.word}</h3>
             <p className="mt-6 max-w-sm text-xl text-ivory/75 sm:text-2xl">{pillar.title}</p>
           </div>
         </div>

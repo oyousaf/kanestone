@@ -1,14 +1,16 @@
 import type { Metadata, Viewport } from "next";
-import { Bodoni_Moda, Geist, Geist_Mono } from "next/font/google";
+import { Bodoni_Moda, Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
-const bodoni = Bodoni_Moda({
+const instrument = Instrument_Serif({
   subsets: ["latin"],
+  weight: "400",
   style: ["normal", "italic"],
-  axes: ["opsz"],
-  variable: "--font-bodoni",
+  variable: "--font-instrument",
 });
+// Bodoni is reserved for the logo lockup, echoing the high-contrast K monogram.
+const bodoni = Bodoni_Moda({ subsets: ["latin"], axes: ["opsz"], variable: "--font-bodoni" });
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
 
@@ -33,7 +35,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en-GB" className={`${bodoni.variable} ${geist.variable} ${geistMono.variable}`}>
+    <html lang="en-GB" className={`${instrument.variable} ${bodoni.variable} ${geist.variable} ${geistMono.variable}`}>
       <body className="bg-ink font-sans text-ivory">
         <SmoothScroll />
         {children}

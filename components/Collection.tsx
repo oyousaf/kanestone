@@ -59,7 +59,7 @@ export default function Collection() {
         <header className="flex flex-col gap-6 px-4 pt-24 pb-8 sm:px-8 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="eyebrow mb-3 text-ink/50">The Collection</p>
-            <h2 className="font-display text-[clamp(2.25rem,4.5vw,4.5rem)] leading-[0.95]">
+            <h2 className="font-display text-[clamp(2.75rem,5.5vw,5.5rem)] leading-[0.9]">
               Eight icons. <span className="italic text-ink/40">One standard.</span>
             </h2>
           </div>
@@ -102,14 +102,14 @@ export default function Collection() {
                   <div className="flex items-start justify-between">
                     <div>
                       <p className="eyebrow text-ink/50">{v.marque}</p>
-                      <h3 className="mt-2 font-display text-4xl leading-none sm:text-5xl">{v.model}</h3>
+                      <h3 className="mt-2 font-display text-5xl leading-none sm:text-6xl">{v.model}</h3>
                     </div>
                     <span className="font-mono text-xs text-ink/40">{String(i + 1).padStart(2, "0")}</span>
                   </div>
 
                   <span
                     aria-hidden
-                    className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 text-center font-display text-[9vw] leading-none whitespace-nowrap text-transparent [-webkit-text-stroke:1px_rgb(10_10_11/0.08)] md:text-[5.5vw]"
+                    className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 text-center font-display text-[11vw] leading-none whitespace-nowrap text-transparent [-webkit-text-stroke:1px_rgb(10_10_11/0.08)] md:text-[7vw]"
                   >
                     {v.model}
                   </span>

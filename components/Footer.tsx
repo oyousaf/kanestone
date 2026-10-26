@@ -1,4 +1,5 @@
 import { contact, marques, nav } from "@/lib/content";
+import Logo from "./Logo";
 
 export default function Footer() {
   const strip = [...marques, ...marques];
@@ -7,7 +8,7 @@ export default function Footer() {
     <footer className="relative overflow-hidden border-t border-white/10 pt-10">
       <div className="flex w-max animate-[marquee_40s_linear_infinite] gap-16 pb-10" aria-hidden>
         {[...strip, ...strip].map((m, i) => (
-          <span key={i} className="flex items-center gap-16 font-display text-3xl text-ivory/25 italic sm:text-4xl">
+          <span key={i} className="flex items-center gap-16 font-display text-4xl text-ivory/25 italic sm:text-5xl">
             {m}
             <span className="size-1.5 rounded-full bg-champagne/60" />
           </span>
@@ -16,7 +17,7 @@ export default function Footer() {
 
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-8 md:grid-cols-4">
         <div className="md:col-span-2">
-          <p className="eyebrow text-champagne">Kanestone Limited</p>
+          <Logo className="text-lg" />
           <p className="mt-4 max-w-sm text-ivory/55">A British luxury automotive company supplying prestigious vehicles to businesses and industry professionals.</p>
         </div>
         <nav aria-label="Footer">
@@ -37,7 +38,7 @@ export default function Footer() {
 
       <p
         aria-hidden
-        className="bg-[url(/media/film/poster.jpg)] bg-cover bg-center bg-clip-text px-2 text-center font-display text-mega font-black leading-[0.78] tracking-[-0.03em] [font-variation-settings:'opsz'_11] text-transparent select-none"
+        className="bg-[url(/media/film/poster.jpg)] bg-cover bg-center bg-clip-text px-2 text-center font-display text-mega leading-[0.78] tracking-[-0.03em] text-transparent select-none"
       >
         KANESTONE
       </p>
