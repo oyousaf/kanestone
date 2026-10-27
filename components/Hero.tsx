@@ -35,7 +35,7 @@ export default function Hero() {
             preload="auto"
             aria-hidden
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-ink/50 via-ink/10 to-ink/85" />
+          <div className="absolute inset-0 bg-linear-to-b from-ink/50 via-ink/10 to-ink/85" />
         </motion.div>
 
         <motion.div
@@ -53,7 +53,8 @@ export default function Hero() {
 
           <h1 className="font-display text-[clamp(3.75rem,13.5vw,15rem)] leading-[0.86] tracking-[-0.02em]" aria-label="Bold. British. Bespoke.">
             {words.map((w, i) => (
-              <span key={w} aria-hidden className="block overflow-hidden">
+              // Padding offset by negative margin gives descenders and italic overhangs room inside the reveal mask.
+              <span key={w} aria-hidden className="-mx-[0.08em] -my-[0.12em] block overflow-hidden px-[0.08em] py-[0.12em]">
                 <motion.span
                   className={`inline-block ${i === 1 ? "italic text-champagne" : ""} ${i === 2 ? "sm:pl-[18vw]" : ""}`}
                   initial={reduce ? false : { y: "105%" }}
